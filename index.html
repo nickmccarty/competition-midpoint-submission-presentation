@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<!-- Slide 1: Research Assistant Tasks -->
+				<section>
+					<h2>Research Assistant Tasks</h2>
+					<img src="images/Research Assistant Tasks.png" alt="Research Assistant Tasks Image">
+				</section>
+	
+				<!-- Slide 2: Science Discovery Engine Screenshot 1 -->
+				<section>
+					<h2>Science Discovery Engine Screenshot 1</h2>
+					<img src="images/Science Discovery Engine Screenshot 1.png" alt="Science Discovery Engine Screenshot 1">
+				</section>
+	
+				<!-- Slide 3: Science Discovery Engine Screenshot 2 -->
+				<section>
+					<h2>Science Discovery Engine Screenshot 2</h2>
+					<img src="images/Science Discovery Engine Screenshot 2.png" alt="Science Discovery Engine Screenshot 2">
+				</section>
+	
+				<!-- Slide 4: NTRS Search Screenshot -->
+				<section>
+					<h2>NTRS Search Screenshot</h2>
+					<img src="images/NTRS Search Screenshot.png" alt="NTRS Search Screenshot">
+				</section>
+				
+				<!-- Add more slides as needed -->
+	
+				<!-- Slide N: The End -->
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="https://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
