@@ -1,89 +1,146 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>Midpoint Submission Presentation</title>
+    <title>Midpoint Submission Presentation</title>
 
-		<meta name="description" content="A presentation to help orient stakeholders with a focus on project progress">
-		<meta name="author" content="Nick McCarty">
+    <meta name="description" content="A presentation to help orient stakeholders with a focus on project progress">
+    <meta name="author" content="Nick McCarty">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    
+    <!-- Custom CSS for background gradient -->
+    <style>
+        .slides {
+            background: linear-gradient(to left top, teal, purple);
+        }
+    </style>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
-			<div class="slides">
-				<!-- Slide 1: Research Assistant Tasks -->
-				<section>
-					<h2>Research Assistant Tasks</h2>
-					<img src="images/Research Assistant Tasks.png" alt="Research Assistant Tasks Image">
-				</section>
-	
-				<!-- Slide 2: Science Discovery Engine Screenshot 1 -->
-				<section>
-					<h2>Science Discovery Engine Screenshot 1</h2>
-					<img src="images/Science Discovery Engine Screenshot 1.png" alt="Science Discovery Engine Screenshot 1">
-				</section>
-	
-				<!-- Slide 3: Science Discovery Engine Screenshot 2 -->
-				<section>
-					<h2>Science Discovery Engine Screenshot 2</h2>
-					<img src="images/Science Discovery Engine Screenshot 2.png" alt="Science Discovery Engine Screenshot 2">
-				</section>
-	
-				<!-- Slide 4: NTRS Search Screenshot -->
-				<section>
-					<h2>NTRS Search Screenshot</h2>
-					<img src="images/NTRS Search Screenshot.png" alt="NTRS Search Screenshot">
-				</section>
-				
-				<!-- Add more slides as needed -->
-	
-				<!-- Slide N: The End -->
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="https://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
-			</div>
-		</div>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+				<h3>Research Assistant Tasks</h3>
+				<img src="images/research-assistant-tasks.png">
+			</section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/zoom/zoom.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/search/search.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
+			<section>
+				<h3>Existing Solutions</h3>
+				<ul>
+					<li>
+						NTRS
+					</li>
+					<li>
+						Science Discovery Engine (Beta)
+					</li>
+				</ul>
+			</section>
 
-			// Also available as an ES module, see:
-			// https://revealjs.com/initialization/
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				hash: true,
+			<section>
+				<h3>NTRS Search</h3>
+				<img src="images/ntrs-search.png">
+			</section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
-			});
+			<section>
+				<h3>Science Discovery Engine</h3>
+				<img src="images/science-discovery-engine.png">
+			</section>
+			
+			<section>
+				<h3>Science Discovery Engine Search</h3>
+				<img src="images/science-discovery-engine-search.png">
+			</section>
 
-		</script>
+			<section>
+				<h3>Our Solution</h3>
+				<p style="margin-left: 15px; margin-right: 15px;">
+					Using the OpenAI API to produce embeddings of article titles and abstracts
+					allows us to utilize cosine similarity in order to facilitate "semantic search"
+				</p>
+			</section>
 
-	</body>
+			<section>
+				<h3>Solution Overview</h3>
+				<img src="images/enterprise-knowledge-retrieval.png">
+			</section>
+
+			<section>
+				<h3>Tech Stack</h3>
+				<img src="images/tech-stack.png">
+			</section>
+
+			<section>
+				<h4>Semantic Search via Cosine Similarity</h4>
+				<img src="images/cosine-similarity.png">
+			</section>
+
+			<section>
+				<h3>Prototype</h3>
+				<img src="images/prototype.png">
+			</section>
+
+			<section>
+				<h3>NTRS Search Results</h3>
+				<img src="images//ntrs-search-results.png">
+			</section>
+
+			<section>
+				<h4>Science Discovery Engine Search Results</h4>
+				<img src="images/science-discovery-engine-search-results.png">
+			</section>
+
+			<section>
+				<h4>Key Takeaways</h4>
+				<ul>
+					<li>
+						<p>Results returned by our prototype appear to be novel (compared to existing solutions)</p>
+					</li>
+					<li>
+						<p>Our methodology and tech stack is leading-edge</p>
+					</li>
+					<li>
+						<p>There are limitations that might (eventually) be overcome by Apache Lucene</p>
+					</li>
+				</ul>
+			</section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // Also available as an ES module, see:
+        // https://revealjs.com/initialization/
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        });
+
+    </script>
+
+</body>
+
 </html>
