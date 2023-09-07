@@ -33,6 +33,12 @@
 
     <div class="reveal">
         <div class="slides">
+			<section>
+				<h2>Research Rovers: AI Research Assistants for NASA</h2>
+				<img src="./images/competition-banner.png" alt="">
+				<p>A competition hosted by NASA Tournament Lab</p>
+			</section>
+
             <section>
 				<h3>Research Assistant Tasks</h3>
 				<img src="images/research-assistant-tasks.png">
@@ -61,7 +67,7 @@
 			</section>
 			
 			<section>
-				<h3>Science Discovery Engine Search</h3>
+				<h3>Science Discovery Engine</h3>
 				<img src="images/science-discovery-engine-search.png">
 			</section>
 
@@ -86,6 +92,24 @@
 			<section>
 				<h3>Tech Stack</h3>
 				<img src="images/tech-stack.png">
+			</section>
+
+			<section>
+				<h3>Tech Stack</h3>
+				<p>
+					We are currently refactoring the codebase, such that:
+					<ul>
+						<li style="margin-left: 25px; margin-right: 25px;">
+							It is packaged as a Dockerized Flask app, ready for deployment
+						</li>
+						<li style="margin-left: 25px; margin-right: 25px;">
+							<code>pgvector</code> is not utilized, given that it uses Euclidean (L2) distance for scoring
+						</li>
+						<li style="margin-left: 25px; margin-right: 25px;">
+							Huggingface and Gradio could ultimately utilized instead of OpenAI API, Flask, and AWS (for simplicity)
+						</li>
+					</ul>
+				</p>
 			</section>
 
 			<section>
